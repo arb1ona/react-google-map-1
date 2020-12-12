@@ -7,7 +7,7 @@ import { Descriptions } from 'antd';
 const { MarkerWithLabel } = require("react-google-maps/lib/components/addons/MarkerWithLabel");
 
 
-Geocode.setApiKey("AIzaSyALVjLwOIM1gf7EzdJJVmWLKdLP-yZGTcw");
+Geocode.setApiKey("AIzaSyDKNLrx3Athj8j-H8S2ocXHIvuZySpZKOc");
 Geocode.enableDebug();
 
 class LocationSearchModal extends React.Component {
@@ -258,7 +258,7 @@ class LocationSearchModal extends React.Component {
 
         return (
             <div style={{ padding: '1rem', margin: '0 auto', maxWidth: 1000 }}>
-                <h1>Google Map Basic</h1>
+                <h1>React Google Map</h1>
                 <Descriptions bordered>
                     <Descriptions.Item label="City">{this.state.city}</Descriptions.Item>
                     <Descriptions.Item label="Area">{this.state.area}</Descriptions.Item>
@@ -267,7 +267,7 @@ class LocationSearchModal extends React.Component {
                 </Descriptions>
 
                 <AsyncMap
-                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyALVjLwOIM1gf7EzdJJVmWLKdLP-yZGTcw&libraries=places"
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKNLrx3Athj8j-H8S2ocXHIvuZySpZKOc&libraries=places"
                     loadingElement={
                         <div style={{ height: `100%` }} />
                     }
